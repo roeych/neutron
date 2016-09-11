@@ -24,6 +24,7 @@ METERING = "METERING"
 L3_ROUTER_NAT = "L3_ROUTER_NAT"
 FLAVORS = "FLAVORS"
 QOS = "QOS"
+ADDRESS_GROUP = "ADDRESS_GROUP"
 
 # Maps extension alias to service type that
 # can be implemented by the core plugin.
@@ -40,6 +41,7 @@ EXT_TO_SERVICE_MAPPING = {
 
 # Maps default service plugins entry points to their extension aliases
 DEFAULT_SERVICE_PLUGINS = {
+    'address_group': 'address-group',
     'auto_allocate': 'auto-allocated-topology',
     'tag': 'tag',
     'timestamp_core': 'timestamp_core',
